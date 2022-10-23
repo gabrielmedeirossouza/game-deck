@@ -2,8 +2,8 @@ import { Vector2 } from "@/libs/math";
 import { Drawer } from "./drawer";
 
 export class Circle extends Drawer {
-  constructor(origin: Vector2, radius: number, color: string) {
-    super();
+  public static Draw(origin: Vector2, radius: number, color: string): void {
+    if (!Drawer._ctx) return;
 
     Drawer._ctx.beginPath();
     Drawer._ctx.arc(origin.x, origin.y * -1, radius, 0, 2 * Math.PI);

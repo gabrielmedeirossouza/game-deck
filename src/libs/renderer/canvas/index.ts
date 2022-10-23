@@ -1,5 +1,6 @@
 import { Vector2 } from "@/libs/math";
 
+import { Drawer } from "./drawer";
 import { Line } from "./line";
 import { Clear } from "./clear";
 import { Polygon } from "./polygon";
@@ -14,19 +15,23 @@ const COLORS_TYPE = {
 };
 
 export class Canvas {
+  public static Init(canvas: HTMLCanvasElement): void {
+    Drawer.Init(canvas);
+  }
+
   public static Clear(): void {
-    new Clear();
+    Clear.Draw();
   }
 
   public static Circle(origin: Vector2, radius:  number): void {
-    new Circle(origin, radius, COLORS_TYPE.white);
+    Circle.Draw(origin, radius, COLORS_TYPE.white);
   }
 
   public static Line(origin: Vector2, line: Vector2): void {
-    new Line(origin, line, COLORS_TYPE.white);
+    Line.Draw(origin, line, COLORS_TYPE.white);
   }
 
   public static Polygon(origin: Vector2, vertices: Vector2[]): void {
-    new Polygon(origin, vertices, COLORS_TYPE.white);
+    Polygon.Draw(origin, vertices, COLORS_TYPE.white);
   }
 }

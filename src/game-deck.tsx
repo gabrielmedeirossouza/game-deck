@@ -8,6 +8,7 @@ input.subscribe({
 });
 
 window.addEventListener("keydown", (e) => {
+  e.preventDefault();
   if (e.repeat) return;
 
   input.dispatch({
@@ -17,6 +18,7 @@ window.addEventListener("keydown", (e) => {
 });
 
 window.addEventListener("keyup", (e) => {
+  e.preventDefault();
   input.dispatch({
     key: e.code as TKeyCode,
     pressed: false

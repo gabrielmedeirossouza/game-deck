@@ -2,8 +2,8 @@ import { Vector2 } from "@/libs/math";
 import { Drawer } from "./drawer";
 
 export class Line extends Drawer {
-  constructor(origin: Vector2, line: Vector2, color: string) {
-    super();
+  public static Draw(origin: Vector2, line: Vector2, color: string): void {
+    if (!Drawer._ctx) return;
 
     Drawer._ctx.beginPath();
     Drawer._ctx.moveTo(origin.x, origin.y * -1);

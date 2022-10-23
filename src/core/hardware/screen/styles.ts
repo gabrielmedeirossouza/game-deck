@@ -26,5 +26,6 @@ export const Display = styled.div`
 export const Canvas = styled.canvas`
   width: 100%;
   height: 100%;
-  background-color: #f3f4f6;
+  /* background-color: #f3f4f6; */
+  background-color: #334;
 `;
