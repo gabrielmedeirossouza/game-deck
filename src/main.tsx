@@ -1,10 +1,10 @@
 import { GlobalStyle } from "@/global-style";
 import ReactDOM from "react-dom/client";
-import { Hardware } from "@/hardware";
+import { GameDeck } from "./game-deck";
 
 ReactDOM.createRoot(document.querySelector("#root") as HTMLElement).render(
   <>
     <GlobalStyle />
-    <Hardware />
+    <GameDeck />
   </>
 );

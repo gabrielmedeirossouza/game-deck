@@ -6,7 +6,7 @@ export const Container = styled.div`
   height: 58rem;
   border-radius: 50%;
   background-color: #343434;
-  border: 5px solid ${darken(0.05, "#343434")};
+  border: 3rem solid ${darken(0.05, "#343434")};
   cursor: grab;
 
   &::before {
@@ -19,7 +19,7 @@ export const Container = styled.div`
     height: 100%;
     border-radius: 50%;
     box-sizing: border-box;
-    border: 5px solid ${lighten(0.05, "#343434")};
+    border: 3rem solid ${lighten(0.05, "#343434")};
   }
 
   &:active {

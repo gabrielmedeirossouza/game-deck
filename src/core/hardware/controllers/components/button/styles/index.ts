@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.button`
+interface ButtonProps {
+  pressed?: boolean;
+}
+
+export const Container = styled.button<ButtonProps>`
   all: unset;
   width: 26rem;
   height: 26rem;
@@ -10,4 +14,6 @@ export const Container = styled.button`
   font-size: 16rem;
   text-align: center;
   cursor: pointer;
+
+  filter: ${({ pressed }) => pressed && "brightness(0.6)"};
 `;

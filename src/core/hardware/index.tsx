@@ -8,6 +8,6 @@ export function Hardware() {
       <LeftController />
       <Screen />
       <RightController />
-    </GameDeck>
+    </GameDeck >
   );
 }
