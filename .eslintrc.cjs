@@ -64,63 +64,63 @@ module.exports = {
     "unicorn/prevent-abbreviations": "off",
     "unicorn/numeric-separators-style": "off",
     "unicorn/no-array-reduce": "off",
-    // "unicorn/filename-case": [
-    //   "error",
-    //   {
-    //     "case": "kebabCase"
-    //   }
-    // ],
-    // "@typescript-eslint/explicit-member-accessibility": [
-    //   "error",
-    //   {
-    //     "accessibility": "explicit",
-    //     "overrides": {
-    //       "constructors": "off"
-    //     }
-    //   }
-    // ],
-    // "sort-class-members/sort-class-members": [
-    //   2,
-    //   {
-    //     "order": [
-    //       "[static-properties]",
-    //       "[properties]",
-    //       "[conventional-private-properties]",
-    //       "constructor",
-    //       "[static-methods]",
-    //       "[methods]",
-    //       "[conventional-private-methods]"
-    //     ],
-    //     "accessorPairPositioning": "getThenSet"
-    //   }
-    // ],
-    // "@typescript-eslint/naming-convention": [
-    //   "error",
-    //   {
-    //     "selector": "classMethod",
-    //     "format": ["PascalCase"],
-    //     "leadingUnderscore": "allow",
-    //     "trailingUnderscore": "allow"
-    //   },
-    //   {
-    //     "selector": ["classMethod"],
-    //     "format": ["PascalCase"],
-    //     "modifiers": ["private"],
-    //     "prefix": ["_"]
-    //   },
-    //   {
-    //     	"selector": ["classProperty"],
-    //     "format": ["camelCase"],
-    //     "modifiers": ["private"],
-    //     "prefix": ["_"]
-    //   },
-    //   {
-    //     "selector": ["classProperty"],
-    //     "format": ["camelCase"],
-    //     "modifiers": ["protected"],
-    //     "prefix": ["_"]
-    //   }
-    // ],
+    "unicorn/filename-case": [
+      "error",
+      {
+        "case": "kebabCase"
+      }
+    ],
+    "@typescript-eslint/explicit-member-accessibility": [
+      "error",
+      {
+        "accessibility": "explicit",
+        "overrides": {
+          "constructors": "off"
+        }
+      }
+    ],
+    "sort-class-members/sort-class-members": [
+      2,
+      {
+        "order": [
+          "[static-properties]",
+          "[properties]",
+          "[conventional-private-properties]",
+          "constructor",
+          "[static-methods]",
+          "[methods]",
+          "[conventional-private-methods]"
+        ],
+        "accessorPairPositioning": "getThenSet"
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "classMethod",
+        "format": ["PascalCase"],
+        "leadingUnderscore": "allow",
+        "trailingUnderscore": "allow"
+      },
+      {
+        "selector": ["classMethod"],
+        "format": ["PascalCase"],
+        "modifiers": ["private"],
+        "prefix": ["_"]
+      },
+      {
+        	"selector": ["classProperty"],
+        "format": ["camelCase"],
+        "modifiers": ["private"],
+        "prefix": ["_"]
+      },
+      {
+        "selector": ["classProperty"],
+        "format": ["camelCase"],
+        "modifiers": ["protected"],
+        "prefix": ["_"]
+      }
+    ],
     "@typescript-eslint/no-empty-function": "off",
     "react/display-name": "off",
     "unicorn/no-null": "off",
